@@ -1,26 +1,26 @@
 # Corrupt
 
-Corrupt é um projeto inicialmente focado em ajudar as pessoas a atingirem suas metas, seja qual for o objetivo. Acreditamos que com as ferramentas certas e o acompanhamento adequado, qualquer pessoa pode alcançar suas metas de forma eficaz e consistente.
+Corrupt is a project initially focused on helping people achieve their goals, whatever they may be. I believe that with the right tools and proper guidance, anyone can reach their goals effectively and consistently.
 
-## 📜 Descrição
+## 📜 Description
 
-O **Corrupt** oferece uma plataforma simples e intuitiva para ajudar os usuários a definir, acompanhar e atingir suas metas. Independentemente do tipo de meta – profissional, pessoal, acadêmica – o projeto tem como missão fornecer suporte através de funcionalidades focadas na organização, planejamento e progresso.
+**Corrupt** offers a simple and intuitive platform to help users set, track, and accomplish their goals. Whether the goals are professional, personal, or academic, the mission of the project is to provide support through features centered around organization, planning, and progress tracking.
 
-## 🚀 Funcionalidades (planejadas)
+## 🚀 Planned Features
 
-- 📅 **Criação de Metas**: Permita que os usuários definam suas metas e prazos.
-- 📈 **Acompanhamento de Progresso**: Forneça uma visualização clara do progresso para cada meta.
-- ⏰ **Lembretes e Notificações**: Lembre os usuários de suas metas com base em prazos e datas importantes.
-- 🎯 **Relatórios e Análises**: Gere relatórios de desempenho para que os usuários possam revisar seu progresso ao longo do tempo.
+- 📅 **Goal Creation**: Allow users to define their goals and deadlines.
+- 📈 **Progress Tracking**: Provide clear visualizations of progress for each goal.
+- ⏰ **Reminders and Notifications**: Remind users of their goals based on deadlines and important dates.
+- 🎯 **Reports and Analysis**: Generate performance reports so users can review their progress over time.
 
-## 📦 Instalação (em desenvolvimento)
+## 📦 Installation (in development)
 
-As instruções de instalação estarão disponíveis em breve, conforme o projeto evolui.
+Installation instructions will be available soon as the project evolves.
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feito com 💻 por [Micaeu](https://github.com/eu-micaeu).
+Made with 💻 by [Micaeu](https://github.com/eu-micaeu).
