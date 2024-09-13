@@ -97,7 +97,7 @@ func (u *User) Registrar(db *sql.DB) gin.HandlerFunc {
 
 		_, err := db.Exec("INSERT INTO users (username, email, password, full_name, created_at) VALUES ($1, $2, $3, $4, $5)", newUser.Username, newUser.Email, newUser.Password, newUser.FullName, time.Now())
 
-		fmt.Println(newUser.Username, newUser.Email, newUser.Password, newUser.FullName, c.ClientIP(), time.Now())
+		fmt.Println(newUser.Username, newUser.Email, newUser.Password, newUser.FullName, time.Now())
 
 		if err != nil {
 
