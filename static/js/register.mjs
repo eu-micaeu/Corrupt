@@ -1,4 +1,4 @@
-import { toastGreen } from "./toast.mjs";
+import { toastGreen, toastRed } from "./toast.mjs";
 
 document.getElementById("btRegister").addEventListener("click", function() {
 
@@ -9,6 +9,26 @@ document.getElementById("btRegister").addEventListener("click", function() {
     var username = document.getElementById("username").value;
 
     var password = document.getElementById("password").value;
+
+    // Verificação email
+
+    if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+
+        toastRed("Invalid email!");
+
+        return;
+
+    }
+
+    // Verificação senha
+
+    if (password.length < 8) {
+
+        toastRed("Password must have at least 8 characters!");
+
+        return;
+
+    }
 
     var data = {
 
@@ -51,7 +71,7 @@ document.getElementById("btRegister").addEventListener("click", function() {
 
         } else {
 
-            alert("Error: " + response.status);
+            toastRed("Error registering user!");
 
         }
 

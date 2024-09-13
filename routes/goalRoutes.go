@@ -18,6 +18,8 @@ func GoalRoutes(r *gin.Engine, db *sql.DB) {
 
 	r.GET("/listGoals", goalHandler.ListarMetas(db))
 
+	r.PUT("/updateGoal/:id", goalHandler.AtualizarMeta(db))
+
 	r.DELETE("/deleteGoal/:id", goalHandler.DeletarMeta(db))
 
 	r.GET("/viewGoal/:id", goalHandler.VisualizarMeta(db))

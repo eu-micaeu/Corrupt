@@ -8,13 +8,43 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../static/css/goal.css">
+
     <title>Corrupt</title>
+
+    <link rel="icon" href="../static/logo/favicon.png" type="image/png">
 
 </head>
 
 <body>
+
+    <header>
+
+        <img src="../static/logo/logo.png" alt="Logo" width=175 height=175>
+
+        <h3>"If you're lying, you're lying to yourself" - ?</h3>
+
+    </header>
+
+    <div id="goal">
+
+        <label for="goalTitle">Title:</label>
+
+        <input id="goalTitle" value="{{ .goal.Title}}"></input>
+
+        <label for="goalDescription">Description:</label>
+
+        <textarea id="goalDescription">{{ .goal.Description}}</textarea>
+
+        <label for="due_date">Due Date:</label>
+
+        <p>{{ .goal.DueDate  }}</p>
+
+        <button type="button" id="btUpdateGoal" data-goal-id="{{ .goal.Goal_ID }}">Update</button>
+
+    </div>
     
-    <p>{{ .goal.Title}}</p>
+    <script type="module" src="../static/js/btUpdateGoal.mjs"></script>
 
 </body>
 

@@ -1,0 +1,77 @@
+@import url('global.css');
+
+header{
+
+    flex-direction: column;
+
+}
+
+header #btLogout{
+
+    background-color: #ff0000;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Paytone One", sans-serif;
+
+}
+
+header #btLogout:hover{
+
+    background-color: #ffffff;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+
+}
+
+#goal{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+
+    font-size: 30px;
+    margin: 10px;
+    font-family: "Paytone One", sans-serif;
+    color: #000000;
+    margin: 0;
+
+}
+
+input {
+
+    width: 400px;
+    padding: 10px;
+    font-family: "Paytone One", sans-serif;
+    font-size: 20px;
+    margin: 10px 0px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+
+}
+
+textarea {
+
+    width: 800px;
+    height: 200px;
+    padding: 10px;
+    font-family: "Paytone One", sans-serif;
+    font-size: 20px;
+    margin: 10px 0px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+
+}
+
+p{
+
+    font-size: 20px;
+
+}

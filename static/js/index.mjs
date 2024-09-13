@@ -1,3 +1,5 @@
+import { toastGreen, toastRed } from "./toast.mjs";
+
 document.getElementById("btEnter").addEventListener("click", function() {
 
     var username = document.getElementById("username").value;
@@ -20,23 +22,25 @@ document.getElementById("btEnter").addEventListener("click", function() {
 
     }).then(function(response) {
 
-        return response.json();
+        if(response.status == 200) {
 
-    }).then(function(data) {
+            toastGreen("Login successful, redirecting...");
 
-        if (data.token) {
+            setInterval(() => {
 
-            localStorage.setItem("token", data.token);
+                window.location.href = "/home";
 
-            window.location.href = "/home";
+            }, 2000);
 
         } else {
-                
-            alert("Login failed");
+
+            toastRed("Invalid username or password");
 
         }
 
-    });
+        return response.json();
+
+    })
 
     }
 )
