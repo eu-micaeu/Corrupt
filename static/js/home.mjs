@@ -25,6 +25,7 @@ function loadGoals() {
             goalList.innerHTML = ''; 
 
             goals.forEach(goal => {
+
                 const goalTitle = document.createElement('h3');
 
                 goalTitle.textContent = goal.title;
@@ -96,6 +97,7 @@ function loadGoals() {
                 goalDiv.className = 'goalDiv';
 
                 const btApagar = document.createElement('button');
+
                 btApagar.textContent = 'Delete';
 
                 btApagar.className = 'btApagar';
@@ -201,6 +203,12 @@ document.getElementById('btSaveGoal').addEventListener('click', function () {
                 document.getElementById('overlay').style.display = 'none';
 
                 document.getElementById('popUpAddGoal').style.display = 'none';
+
+                document.getElementById('title').value = '';
+
+                document.getElementById('description').value = '';
+
+                document.getElementById('due_date').value = '';
 
             }
 

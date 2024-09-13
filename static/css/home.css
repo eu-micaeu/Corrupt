@@ -1,11 +1,5 @@
 @import url('global.css');
 
-header{
-
-    flex-direction: column;
-
-}
-
 header #btLogout{
 
     background-color: #ff0000;
@@ -99,12 +93,15 @@ header #btLogout:hover{
     font-size: 20px;
     cursor: pointer;
     font-family: "Paytone One", sans-serif;
+    border: 2px solid #188f00;
     
 }
 
 #popUpAddGoal #btSaveGoal:hover{
 
-    background-color: #0f5f00;
+    background-color: white;
+    color: #188f00;
+    border: 2px solid #188f00;
 
 }
 

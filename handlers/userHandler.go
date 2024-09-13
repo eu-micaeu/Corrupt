@@ -110,16 +110,47 @@ func (u *User) Registrar(db *sql.DB) gin.HandlerFunc {
 
 }
 
+// Função para resgatar informações do usuário
+func (u *User) Resgatar(db *sql.DB) gin.HandlerFunc {
+
+	return func(c *gin.Context) {
+
+		token := c.Request.Header.Get("Authorization")
+
+		userID, err := ValidarOToken(token)
+
+		if err != nil {
+
+			c.JSON(401, gin.H{"message": "Token inválido"})
+
+			return
+
+		}
+
+		row := db.QueryRow("SELECT user_id, username, email, full_name, created_at FROM users WHERE user_id = $1", userID)
+
+		err = row.Scan(&u.User_ID, &u.Username, &u.Email, &u.FullName, &u.CreatedAt)
+
+		if err != nil {
+
+			c.JSON(404, gin.H{"message": "Usuário não encontrado"})
+
+			return
+
+		}
+
+		c.JSON(200, u)
+
+	}
+
+}
+
 // Função para deletar o usuário
 func (u *User) Deletar(db *sql.DB) gin.HandlerFunc {
 	
 	return func(c *gin.Context) {
 
-		// Lendo o atual token
-
 		token := c.Request.Header.Get("Authorization")
-
-		// Verificando se o token é válido
 
 		userID, err := ValidarOToken(token)
 

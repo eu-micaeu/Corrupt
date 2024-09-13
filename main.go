@@ -45,6 +45,12 @@ func main() {
 
 	})
 
+	r.GET("/config", func(c *gin.Context) {
+
+		c.HTML(http.StatusOK, "config.html", nil)
+
+	})
+
 	r.Static("/static", "./static")
 
 	routes.UserRoutes(r, db)
