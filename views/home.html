@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/home.css">
+
+    <title>Corrupt</title>
+
+    <link rel="icon" href="../static/logo/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="../static/logo/logo.png" alt="Logo" width=175 height=175>
+
+        <h3>"If you're lying, you're lying to yourself" - ?</h3>
+
+        <button id="btLogout">Logout</button>
+
+    </header>
+
+    <div id="overlay"></div>
+
+    <div id="popUpAddGoal">
+
+        <label for="title">Title:</label>
+
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+
+        <textarea type="text" id="description" name="description" required></textarea>
+
+        <label for="due_date">Due Date:</label>
+
+        <input type="datetime-local" id="due_date" name="due_date" required>
+        
+
+        <button type="button" id="btSaveGoal">Save</button>
+
+    </div>
+
+    <main>
+
+        <h2>Goals <button id="btAddGoal" title="Add goal">+</button> </h2>
+
+        <div id="goalList"></div>
+
+    </main>
+
+    <script type="module" src="../static/js/home.mjs"></script>
+
+    <script type="module" src="../static/js/btLogout.mjs"></script>
+
+</body>
+
+</html>

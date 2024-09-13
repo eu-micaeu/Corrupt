@@ -1,0 +1,90 @@
+@import url('global.css');
+
+main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+main #init{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+main form{
+
+    width: 400px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 5vw;
+    font-family: 'Paytone One', sans-serif;
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+main form label{
+
+    font-size: 20px;
+    width: 80%;
+    text-align: left;
+
+}
+
+main form input{
+
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Paytone One', sans-serif;
+
+}
+
+main form #btRegister{
+
+    width: 20%;
+    height: 40px;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Paytone One', sans-serif;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+
+}
+
+main form #btRegister:hover{
+
+    background-color: #bbbbbb;
+
+}
+
+main form a{
+
+    text-decoration: none;
+    color: #fff;
+
+}
+
+main form a:hover{
+
+    color: #bbbbbb;
+
+}

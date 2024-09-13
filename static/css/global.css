@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Paytone One", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+
+}
+
+main a{
+
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #000;
+}
+
+footer a{
+    margin: 100px;
+    text-decoration: none;
+    color: #000;
+}
